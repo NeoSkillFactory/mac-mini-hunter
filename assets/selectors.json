@@ -1,0 +1,30 @@
+{
+  "ebay": {
+    "searchResults": ".srp-results .s-item",
+    "itemTitle": ".s-item__title",
+    "itemPrice": ".s-item__price",
+    "itemCondition": ".s-item__subtitle .SECONDARY_INFO",
+    "itemLink": ".s-item__link",
+    "itemImage": ".s-item__image-img",
+    "buyNowButton": "#binBtn_btn",
+    "addToCartButton": "#atcBtn_btn",
+    "checkoutButton": "#sbin_gxo_btn"
+  },
+  "backmarket": {
+    "productCard": "[data-qa='productCard']",
+    "productTitle": "[data-qa='productTitle']",
+    "productPrice": "[data-qa='productPrice']",
+    "productCondition": "[data-qa='productGrade']",
+    "addToCartButton": "[data-qa='addToCartButton']",
+    "checkoutButton": "[data-qa='checkoutButton']"
+  },
+  "swappa": {
+    "listingCard": ".listing_row",
+    "listingTitle": ".listing_row .title",
+    "listingPrice": ".listing_row .price",
+    "listingCondition": ".listing_row .condition",
+    "listingLink": ".listing_row a.title",
+    "buyButton": ".buy-now-btn",
+    "checkoutButton": ".checkout-btn"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "mac-mini-hunter",
+  "version": "1.0.0",
+  "description": "Monitor Mac Mini availability on secondary markets and auto-purchase below price thresholds",
+  "main": "scripts/monitor.js",
+  "scripts": {
+    "start": "node scripts/monitor.js",
+    "monitor": "node scripts/monitor.js",
+    "test": "node --test 'tests/*.test.js'"
+  },
+  "keywords": [
+    "mac-mini",
+    "monitoring",
+    "automation",
+    "purchasing"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.3.4"
+  }
+}

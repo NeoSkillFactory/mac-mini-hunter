@@ -1,0 +1,85 @@
+{
+  "ebay": {
+    "steps": [
+      {
+        "action": "click",
+        "selector": "#binBtn_btn",
+        "description": "Click Buy It Now"
+      },
+      {
+        "action": "wait",
+        "selector": "#reviewOrder",
+        "description": "Wait for order review page"
+      },
+      {
+        "action": "verify",
+        "selector": ".item-price",
+        "description": "Verify price matches expected"
+      },
+      {
+        "action": "click",
+        "selector": "#confirmPurchase",
+        "description": "Confirm purchase"
+      }
+    ],
+    "timeout": 30000,
+    "requiresAuth": true
+  },
+  "backmarket": {
+    "steps": [
+      {
+        "action": "click",
+        "selector": "[data-qa='addToCartButton']",
+        "description": "Add to cart"
+      },
+      {
+        "action": "wait",
+        "selector": "[data-qa='cartDrawer']",
+        "description": "Wait for cart drawer"
+      },
+      {
+        "action": "click",
+        "selector": "[data-qa='checkoutButton']",
+        "description": "Proceed to checkout"
+      },
+      {
+        "action": "verify",
+        "selector": "[data-qa='orderTotal']",
+        "description": "Verify order total"
+      },
+      {
+        "action": "click",
+        "selector": "[data-qa='placeOrderButton']",
+        "description": "Place order"
+      }
+    ],
+    "timeout": 30000,
+    "requiresAuth": true
+  },
+  "swappa": {
+    "steps": [
+      {
+        "action": "click",
+        "selector": ".buy-now-btn",
+        "description": "Click Buy Now"
+      },
+      {
+        "action": "wait",
+        "selector": ".checkout-form",
+        "description": "Wait for checkout form"
+      },
+      {
+        "action": "verify",
+        "selector": ".order-total",
+        "description": "Verify total price"
+      },
+      {
+        "action": "click",
+        "selector": ".checkout-btn",
+        "description": "Complete purchase"
+      }
+    ],
+    "timeout": 30000,
+    "requiresAuth": true
+  }
+}

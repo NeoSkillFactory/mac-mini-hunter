@@ -1,0 +1,50 @@
+# mac-mini-hunter configuration
+# Copy this file to config.yaml and edit with your settings
+
+targets:
+  - model: "Mac Mini M1"
+    maxPrice: 400
+    condition: "good"        # any, fair, good, excellent
+    platforms:
+      - ebay
+      - backmarket
+      - swappa
+
+  - model: "Mac Mini M2"
+    maxPrice: 500
+    condition: "good"
+    platforms:
+      - ebay
+      - backmarket
+
+platforms:
+  ebay:
+    enabled: true
+    apiKey: ""               # eBay Browse API key
+    marketplace: "EBAY_US"
+  backmarket:
+    enabled: true
+    apiKey: ""               # BackMarket API key
+    country: "us"
+  swappa:
+    enabled: true
+    apiKey: ""               # Swappa API key
+
+notifications:
+  console: true
+  webhook:
+    enabled: false
+    url: ""
+  logFile:
+    enabled: true
+    path: "./purchase-history.log"
+
+monitoring:
+  intervalSeconds: 300       # 5 minutes between scans
+  maxPurchasesPerDay: 3
+  autoPurchase: false        # Set to true to enable auto-buy
+
+payment:
+  configured: false
+  # Payment details are loaded from environment variables:
+  # MAC_HUNTER_PAYMENT_TOKEN
