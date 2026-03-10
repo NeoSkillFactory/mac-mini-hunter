@@ -32,8 +32,6 @@ class BackMarketPlatform {
   }
 
   async searchApi(target) {
-    const slug = MODEL_SLUGS[target.model] || "mac-mini";
-
     return new Promise((resolve, reject) => {
       const req = https.request(
         {
