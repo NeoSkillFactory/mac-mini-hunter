@@ -29,8 +29,6 @@ targets:
 
 Source code: [github.com/NeoSkillFactory/mac-mini-hunter](https://github.com/NeoSkillFactory/mac-mini-hunter)
 
-**Price suggestion:** $29 USD
-
 ## License
 
 MIT © NeoSkillFactory
